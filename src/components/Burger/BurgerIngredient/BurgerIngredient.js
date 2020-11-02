@@ -34,6 +34,9 @@ const burgerIngredient = (props) => {
         case 'bacon':
             ingredient = <div className={classes.Bacon}></div>;
             break;
+
+        default:
+            alert('Not a valid ingredient!')
     }
 
     return ingredient;
