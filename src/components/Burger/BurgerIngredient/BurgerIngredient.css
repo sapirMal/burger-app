@@ -4,7 +4,7 @@
     background: linear-gradient(#F08E4A, #e27b36);
     border-radius: 0 0 30px 30px;
     box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
+    margin: 0 auto;
 }
 
 .BreadTop {
@@ -18,12 +18,12 @@
 }
 
 .Seeds1 {
-    width: 10%;
-    height: 15%;
+    width: 8%;
+    height: 13%;
     position: absolute;
     background-color: white;
     left: 30%;
-    top: 50%;
+    top: 55%;
     border-radius: 40%;
     transform: rotate(-20deg);
     box-shadow: inset -2px -3px #c9c9c9;
@@ -56,8 +56,8 @@
   }
 
   .Seeds2 {
-    width: 10%;
-    height: 15%;
+    width: 8%;
+    height: 13%;
     position: absolute;
     background-color: white;
     left: 64%;

@@ -24,10 +24,7 @@
 
 @media (min-width: 1000px) and (min-height: 700px) {
     .Burger {
-        margin-top: 7%;
         width: 700px;
-        height: 500px;
-        /* margin-bottom: -1.5%; */
-        padding: 0;
+              
     }
 }
