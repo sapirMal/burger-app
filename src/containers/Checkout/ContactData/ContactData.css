@@ -8,10 +8,10 @@
     border: 1px solid #eee;
 }
 
-.ContactData input{
+/* .ContactData input{
     display: block;
     margin: auto;
-}
+} */
 
 @media (min-width: 600px){
     .ContactData{
