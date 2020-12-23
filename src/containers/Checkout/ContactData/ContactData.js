@@ -38,6 +38,9 @@ class ContactData extends Component {
                     type: 'email',
                     placeholder: 'E-Mail'
                 },
+                rules: {},
+                valid: false,
+                tach: false,
                 elementType: 'input'
             },
             street: {
@@ -47,6 +50,9 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Street'
                 },
+                rules: {},
+                valid: false,
+                tach: false,
                 elementType: 'input'
             },
             number: {
@@ -55,6 +61,9 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Apartment number'
                 },
+                rules: {},
+                valid: false,
+                tach: false,
                 elementType: 'input'
             },
             city: {
@@ -63,6 +72,9 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'City'
                 },
+                rules: {},
+                valid: false,
+                tach: false,
                 elementType: 'input'
             },
             deliveryMethod: {
