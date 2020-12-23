@@ -1,4 +1,4 @@
-https://burger-app-sapir.herokuapp.com/
+[Link to the web version](https://burger-app-sapir.herokuapp.com/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
