@@ -7,9 +7,10 @@ import {Provider} from 'react-redux';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import rootReducer from './Redux/ingredientsReducer';
+import rootReducer from './store/ingredientsReducer';
 
 const store = createStore(rootReducer);
+console.log(store.getState());
 const app = (
     <Provider store={store}>
         <BrowserRouter>
