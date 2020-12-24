@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+
 import Aux from '../../hoc/Auxiliary'
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
@@ -7,6 +9,7 @@ import OrderSummery from '../../components/Burger/OrderSummery/OrderSummery';
 import axios from '../../axios-orders';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler';
+import * as types from '../../Redux/actions';
 
 const INGREDIENTS_PRICE = {
     salad: 0.4,
@@ -133,4 +136,22 @@ class BurgerBuilder extends Component {
     }
 }
 
-export default withErrorHandler(BurgerBuilder, axios);
+const mapStateToProps = (state) => {
+    return {
+        ingredients: state.ingredients
+    };
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increment_bacon: () => dispatch({type: types.increment_bacon}),
+        decrement_bacon: () => dispatch({type: types.decrement_bacon}),
+        increment_meat: () => dispatch({type: types.increment_meat}),
+        decrement_meat: () => dispatch({type: types.decrement_meat}),
+        increment_salad: () => dispatch({type: types.increment_salad}),
+        decrement_salad: () => dispatch({type: types.decrement_salad}),
+        increment_cheese: () => dispatch({type: types.increment_cheese}),
+        decrement_cheese: () => dispatch({type: types.decrement_cheese}),
+    };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(BurgerBuilder, axios));
