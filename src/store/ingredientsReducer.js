@@ -1,7 +1,7 @@
 import * as types from './actions';
 
 const initialState = {
-    ingredients: {salad: 0, cheese: 0, meat:0, bacon: 0},
+    ingredients: {salad: 0, cheese: 0, meat: 0, bacon: 0},
     totalPrice: 2.5
 };
 const INGREDIENTS_PRICE = {
@@ -15,7 +15,7 @@ const ingredients = (state = initialState, action) => {
     const ing = action.ingredient;
     const updateIngredients = {...state.ingredients};
     let updatePrice = state.totalPrice;
-    console.log(state);
+    // console.log(state);
     switch (action.type) {
         case types.ADD_INGREDIENT:
             updateIngredients[ing] += 1;
