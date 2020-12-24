@@ -2,7 +2,7 @@ import * as types from './actions';
 
 const initialState = {
     ingredients: {salad: 0, cheese: 0, meat: 0, bacon: 0},
-    totalPrice: 2.5
+    totalPrice: 3
 };
 const INGREDIENTS_PRICE = {
     salad: 0.4,
